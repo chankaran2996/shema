@@ -11,7 +11,7 @@ export const getMovies = async (req, res) => {
 };
 
 // Fectch movie by ID
-export const getMovies = async (req, res) => {
+export const getMovieByID = async (req, res) => {
   try {
     const {id} = request.params;
     const movie = await Movie.findOne({ _id : new ObjectId(id) });
